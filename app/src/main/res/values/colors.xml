@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00089C</color>
+    <color name="colorPrimaryDark">#000565</color>
+    <color name="colorAccent">#7109AA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorKeyOne">#0189C4</color>
+    <color name="colorKeyNums">#FFB700</color>
+    <color name="colorKeyTop">#FF3100</color>
+</resources>
