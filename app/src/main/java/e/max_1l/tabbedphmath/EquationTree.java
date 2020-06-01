@@ -339,7 +339,7 @@ class EquationTree {
     }
 
     void parseMinus(){
-        if (value.length() > 1) {
+        if (value.length() > 1 && inflection >= 0) {
             char[] ch = value.toCharArray();
             for (int i = 0; i < inflection; i++) {
                 if (findMinus(ch, i, lchild)) break;

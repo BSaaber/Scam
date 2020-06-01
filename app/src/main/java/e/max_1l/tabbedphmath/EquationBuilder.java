@@ -212,7 +212,13 @@ public class EquationBuilder {
     }
 
     public String division(){
-        right = new EquationTree('(' + right.value +")/(" + left.lchild.value + ')', null);
+        if (left.lchild.value.equals("0-1") || left.lchild.value.equals("-1")){
+            right = new EquationTree("0-(" + right.value + ')', null);
+            open();
+        }
+        else if (!left.lchild.value.equals("1")){
+            right = new EquationTree('(' + right.value +")/(" + left.lchild.value + ')', null);
+        }
         left = new EquationTree(variable, null);
         refresh();
         return fixNegativity();
